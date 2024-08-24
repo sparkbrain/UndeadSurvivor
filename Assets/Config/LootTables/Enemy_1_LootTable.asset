@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e36fb78fb4186a4f8d7b929af76a24a, type: 3}
+  m_Name: Enemy_1_LootTable
+  m_EditorClassIdentifier: Assembly-CSharp::LootTable
+  possibleDrops:
+  - item: {fileID: 789501503607579828, guid: 0ed7e0af07f89eb4ba253fa8919cc25c, type: 3}
+    chance: 40
+  - item: {fileID: 6439966082907171673, guid: 02446aab07a26924da678c2cdd519f11, type: 3}
+    chance: 15
+  - item: {fileID: 6075923857156080015, guid: c6edde700793af640bf93cf9c28068d1, type: 3}
+    chance: 5
+  - item: {fileID: 3699228301460907599, guid: 6574bef2aa511cf438c712ad36ce65c9, type: 3}
+    chance: 1

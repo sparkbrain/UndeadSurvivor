@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53d35313b6ca8204ea6a874efe0ce903, type: 3}
+  m_Name: Upgrade Table
+  m_EditorClassIdentifier: 
+  possibleDrops:
+  - item: {fileID: 11400000, guid: 5f06bd98928920945a64a234204f11f6, type: 2}
+    chance: 25
+  - item: {fileID: 11400000, guid: e71c28790eb29d74db021ef4c71386df, type: 2}
+    chance: 25
+  - item: {fileID: 11400000, guid: 73375cb79d7934746bc458608bec8d7f, type: 2}
+    chance: 25
+  - item: {fileID: 11400000, guid: 8f4ab144d62156a4e88564da6378cc53, type: 2}
+    chance: 25
