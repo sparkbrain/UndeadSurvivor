@@ -22,9 +22,10 @@ public struct BulletConfig
 public class Bullet : MonoBehaviour
 {
     [Inject] private readonly BulletPool _bulletObjectPool;
-    private BulletConfig _bulletConfig;
 
-    Rigidbody2D _rigidbody;
+    private BulletConfig _bulletConfig;
+    private Rigidbody2D _rigidbody;
+
     private bool _alreadyHit;
 
     private void Awake()

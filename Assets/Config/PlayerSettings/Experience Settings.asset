@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Experience Settings
   m_EditorClassIdentifier: 
   experienceNeededStart: 10
-  experienceNeededMultiplier: 1.2
+  experienceNeededMultiplier: 1.1

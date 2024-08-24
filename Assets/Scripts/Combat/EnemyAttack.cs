@@ -5,8 +5,9 @@ using VContainer;
 
 public class EnemyAttack : MonoBehaviour
 {
+    [Inject] private readonly Transform _playerTransform;
+
     [SerializeField] EnemyAttackSettings _attackSettings;
-    [Inject] Transform _playerTransform;
 
     private Health _playerHealthComponent;
     private float _attackCooldown = 0f;
@@ -24,10 +25,10 @@ public class EnemyAttack : MonoBehaviour
         {
             var diff = transform.position - _playerHealthComponent.transform.position;
 
-            if (diff.sqrMagnitude < Mathf.Pow(_attackSettings.Range, 2))
+            if (diff.sqrMagnitude < Mathf.Pow(_attackSettings.range, 2))
             {
                 Attack(_playerHealthComponent);
-                _attackCooldown = _attackSettings.AttackRate;
+                _attackCooldown = _attackSettings.attackRate;
             }
         }
         else
@@ -38,6 +39,6 @@ public class EnemyAttack : MonoBehaviour
 
     private void Attack(Health target)
     {
-        target.DoDamage(_attackSettings.AttackDamage);
+        target.DoDamage(_attackSettings.attackDamage);
     }
 }

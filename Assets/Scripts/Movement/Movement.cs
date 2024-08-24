@@ -17,7 +17,7 @@ public abstract class Movement : MonoBehaviour
             throw new ArgumentNullException($"No movement settings set on {transform.name}");
         }
 
-        _movementSpeed = _movementSettings.MoveSpeed;
+        _movementSpeed = _movementSettings.moveSpeed;
     }
 
     protected virtual void LateUpdate()

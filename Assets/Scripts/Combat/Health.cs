@@ -15,7 +15,7 @@ public class Health : MonoBehaviour
     public delegate void DeathEvent();
     public event DeathEvent OnDeathEvent;
 
-    [SerializeField] Slider m_healthBarSlider;
+    [SerializeField] Slider _healthBarSlider;
     [SerializeField] HealthSettings _healthSettings;
     [SerializeField] SpriteRenderer _spriteRenderer;
     [SerializeField] Color _poisonColor;
@@ -33,7 +33,7 @@ public class Health : MonoBehaviour
         _maxHealth = _healthSettings.health;
         _health = _maxHealth;
 
-        if (m_healthBarSlider != null) m_healthBarSlider.value = _health / _maxHealth;
+        if (_healthBarSlider != null) _healthBarSlider.value = _health / _maxHealth;
 
         _animator = _animator != null ? _animator : GetComponent<Animator>();
         _spriteRenderer = _spriteRenderer != null ? _spriteRenderer : GetComponent<SpriteRenderer>();
@@ -63,7 +63,7 @@ public class Health : MonoBehaviour
             return;
         }
         if (_animator != null) { _animator.SetTrigger("Hit"); }
-        if (m_healthBarSlider != null) { SetHealthBarValue(); }
+        if (_healthBarSlider != null) { SetHealthBarValue(); }
     }
 
     private void Kill()
@@ -83,7 +83,7 @@ public class Health : MonoBehaviour
 
     private void SetHealthBarValue()
     {
-        m_healthBarSlider.value = (float)_health / _maxHealth;
+        _healthBarSlider.value = (float)_health / _maxHealth;
     }
 
     public void RestoreHealth(float amount)

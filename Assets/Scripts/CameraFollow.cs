@@ -5,16 +5,16 @@ using VContainer;
 
 public class CameraFollow : MonoBehaviour
 {
-    [Inject] private readonly Transform playerTransform;
-    [SerializeField] private Vector3 cameraDistance;
+    [Inject] private readonly Transform _playerTransform;
+    [SerializeField] private Vector3 _cameraDistance;
 
     void Update()
     {
-        if (playerTransform == null)
+        if (_playerTransform == null)
         {
             return;
         }
 
-        transform.position = playerTransform.position + cameraDistance;
+        transform.position = _playerTransform.position + _cameraDistance;
     }
 }

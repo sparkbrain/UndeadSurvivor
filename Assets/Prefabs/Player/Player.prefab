@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -158,7 +158,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 0.23137255}
   m_FlipX: 0
@@ -353,7 +353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _movementSettings: {fileID: 11400000, guid: 33857690b6cd30546b11698ac9d1d370, type: 2}
-  _renderer: {fileID: 0}
+  _renderer: {fileID: 4562423202336397776}
   _animator: {fileID: 4149504416893032889}
 --- !u!114 &7887346052565229994
 MonoBehaviour:
@@ -387,9 +387,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb04a62aa64ef134a8048aa735d7a3d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_healthBarSlider: {fileID: 528815817327511880}
+  _healthBarSlider: {fileID: 528815817327511880}
   _healthSettings: {fileID: 11400000, guid: ffa01bc535999684694def8258fd2f6c, type: 2}
-  _spriteRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 4562423202336397776}
   _poisonColor: {r: 0, g: 0.6679245, b: 0.18581432, a: 0}
 --- !u!114 &7718815897336264017
 MonoBehaviour:
@@ -403,10 +403,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfb333be8f5afb54e9b0887dbe72a5ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickupRange: 3
-  pickupMovementSpeed: 5
-  pickupInterval: 0.1
-  pickupLayerMask:
+  _pickupRange: 3
+  _pickupInterval: 0.1
+  _pickupLayerMask:
     serializedVersion: 2
     m_Bits: 512
   _health: {fileID: 4599498791798111758}
@@ -456,8 +455,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e8c91edb6ed4f24281a10f01e6d57b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  corpsePrefab: {fileID: 7409109264065400242, guid: 408cb96b6d534a048b277e14e497a8e3, type: 3}
-  spriteRenderer: {fileID: 4562423202336397776}
+  _corpsePrefab: {fileID: 7409109264065400242, guid: 408cb96b6d534a048b277e14e497a8e3, type: 3}
+  _spriteRenderer: {fileID: 4562423202336397776}
 --- !u!114 &3569325709302583280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -470,7 +469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c41310dac604144fbf01021dc48afa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 7659792048186445667, guid: 8135b57d37c38f14a857b865443811a5, type: 3}
+  _objectToSpawn: {fileID: 7659792048186445667, guid: 8135b57d37c38f14a857b865443811a5, type: 3}
 --- !u!1 &6063734431443648508
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,7 +496,7 @@ Transform:
   m_GameObject: {fileID: 6063734431443648508}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.19027643, w: 0.9817306}
-  m_LocalPosition: {x: 0.3, y: -0.2, z: 0}
+  m_LocalPosition: {x: 0, y: -0.2, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

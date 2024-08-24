@@ -3,9 +3,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Player shooting", menuName = "Config/Player/Player Shooting")]
 public class PlayerShootingSettings : ScriptableObject
 {
-    public float Range = 4f;
-    public float FireRate = 2f;
-    public int StartingAmmo = 30;
-    public float Damage = 1;
-    public float BulletTravelSpeed = 5;
+    public float range = 4f;
+    public float fireRate = 2f;
+    public int startingAmmo = 30;
+    public float damage = 1;
+    public float bulletTravelSpeed = 15;
 }

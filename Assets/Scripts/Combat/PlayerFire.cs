@@ -27,11 +27,11 @@ public class PlayerFire : MonoBehaviour
 
     private void Awake()
     {
-        _fireRange = _attackSettings.Range;
-        _fireRate = _attackSettings.FireRate;
-        _damage = _attackSettings.Damage;
-        _bulletTravelSpeed = _attackSettings.BulletTravelSpeed;
-        _currentAmmo = _attackSettings.StartingAmmo;
+        _fireRange = _attackSettings.range;
+        _fireRate = _attackSettings.fireRate;
+        _damage = _attackSettings.damage;
+        _bulletTravelSpeed = _attackSettings.bulletTravelSpeed;
+        _currentAmmo = _attackSettings.startingAmmo;
 
         UpdateRangeIndicator();
         UpdateAmmoIndicator();

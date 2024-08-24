@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: lootTable
       value: 
       objectReference: {fileID: 11400000, guid: 552ecf9c48dae3e4cb7fdab0f0a2085a, type: 2}
+    - target: {fileID: -8223611212706335289, guid: 4c75c3767eb11d740925e13c52e58121, type: 3}
+      propertyPath: _lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 552ecf9c48dae3e4cb7fdab0f0a2085a, type: 2}
     - target: {fileID: -7203909691983117354, guid: 4c75c3767eb11d740925e13c52e58121, type: 3}
       propertyPath: _attackSettings
       value: 
@@ -95,40 +99,5 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2000761914901519965, guid: 4c75c3767eb11d740925e13c52e58121, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: -8539037949795273367}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c75c3767eb11d740925e13c52e58121, type: 3}
---- !u!1 &8991012402991870489 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2000761914901519965, guid: 4c75c3767eb11d740925e13c52e58121, type: 3}
-  m_PrefabInstance: {fileID: 7422596808786046020}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &-8539037949795273367
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8991012402991870489}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0

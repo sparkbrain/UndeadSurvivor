@@ -2,10 +2,10 @@
 
 public class SpawnGameobjectOnDeath : SpawnOnDeathBase
 {
-    [SerializeField] private GameObject objectToSpawn;
+    [SerializeField] private GameObject _objectToSpawn;
 
     protected override void Spawn()
     {
-        Instantiate(objectToSpawn);
+        Instantiate(_objectToSpawn);
     }
 }

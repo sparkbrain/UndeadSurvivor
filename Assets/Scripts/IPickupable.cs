@@ -1,4 +1,4 @@
 ﻿public interface IPickupable
 {
-    public void PickUp(UpPicker picker);
+    public void PickUp(PickupController picker);
 }

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcbab6988719b9b4f965563ba209b0c3, type: 3}
   m_Name: Player_shooting
   m_EditorClassIdentifier: 
-  Range: 3
-  FireRate: 1.5
-  StartingAmmo: 100
-  Damage: 1
-  BulletTravelSpeed: 12
+  range: 4
+  fireRate: 3
+  startingAmmo: 30
+  damage: 1
+  bulletTravelSpeed: 15

@@ -16,10 +16,10 @@ public struct AudioContainer
 [RequireComponent(typeof(AudioSource))]
 public class AudioManager : MonoBehaviour
 {
-    [SerializeField] AudioContainer levelUpSound;
-    [SerializeField] AudioContainer enemyDeathSound;
-    [SerializeField] AudioContainer loseSound;
-    [SerializeField] AudioContainer hitSound;
+    [SerializeField] AudioContainer _levelUpSound;
+    [SerializeField] AudioContainer _deathSound;
+    [SerializeField] AudioContainer _loseSound;
+    [SerializeField] AudioContainer _hitSound;
 
     private AudioSource _audioSource;
 
@@ -30,25 +30,25 @@ public class AudioManager : MonoBehaviour
 
     public void PlayLevelUpSound()
     {
-        AudioClip clip = levelUpSound.GetClip();
+        AudioClip clip = _levelUpSound.GetClip();
         PlayAudioClip(clip);
     }
 
     public void PlayDeathSound()
     {
-        AudioClip clip = enemyDeathSound.GetClip();
+        AudioClip clip = _deathSound.GetClip();
         PlayAudioClip(clip);
     }
 
     public void PlayLoseSound()
     {
-        AudioClip clip = loseSound.GetClip();
+        AudioClip clip = _loseSound.GetClip();
         PlayAudioClip(clip);
     }
 
     public void PlayBulletHitSound()
     {
-        AudioClip clip = hitSound.GetClip();
+        AudioClip clip = _hitSound.GetClip();
         PlayAudioClip(clip);
     }
 

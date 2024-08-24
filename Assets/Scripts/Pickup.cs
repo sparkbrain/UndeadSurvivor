@@ -14,10 +14,10 @@ public class Pickup : MonoBehaviour, IPickupable
     [SerializeField] PickupSettings _pickupSettings;
     [SerializeField] private float pickupSpeed;
 
-    private UpPicker target;
+    private PickupController target;
 
 
-    public void PickUp(UpPicker picker)
+    public void PickUp(PickupController picker)
     {
         gameObject.layer = 0;
 

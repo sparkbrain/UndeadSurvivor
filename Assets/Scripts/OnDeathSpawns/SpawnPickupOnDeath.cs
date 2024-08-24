@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class SpawnPickupOnDeath : SpawnOnDeathBase
 {
-    [SerializeField] private LootTable lootTable;
+    [SerializeField] private LootTable _lootTable;
 
     protected override void Spawn()
     {
-        if (lootTable.GetDrop(out GameObject loot))
+        if (_lootTable.GetDrop(out GameObject loot))
         {
             Instantiate(loot, transform.position, Quaternion.identity);
         }

@@ -12,14 +12,46 @@ PrefabInstance:
       propertyPath: lootTable
       value: 
       objectReference: {fileID: 11400000, guid: d79ef8a522674804daf1fb3a3f169654, type: 2}
+    - target: {fileID: -8223611212706335289, guid: 4c75c3767eb11d740925e13c52e58121, type: 3}
+      propertyPath: _lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: d79ef8a522674804daf1fb3a3f169654, type: 2}
+    - target: {fileID: -7203909691983117354, guid: 4c75c3767eb11d740925e13c52e58121, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -7203909691983117354, guid: 4c75c3767eb11d740925e13c52e58121, type: 3}
       propertyPath: _attackSettings
       value: 
       objectReference: {fileID: 11400000, guid: 10e3b1dc69280b54684b9fbeca300a0a, type: 2}
     - target: {fileID: -5974728619388443056, guid: 4c75c3767eb11d740925e13c52e58121, type: 3}
+      propertyPath: counterThing
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -5974728619388443056, guid: 4c75c3767eb11d740925e13c52e58121, type: 3}
+      propertyPath: _counterThing
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -5974728619388443056, guid: 4c75c3767eb11d740925e13c52e58121, type: 3}
+      propertyPath: nudgeDistance
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: -5974728619388443056, guid: 4c75c3767eb11d740925e13c52e58121, type: 3}
+      propertyPath: _nudgeDistance
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: -5974728619388443056, guid: 4c75c3767eb11d740925e13c52e58121, type: 3}
       propertyPath: _movementSettings
       value: 
       objectReference: {fileID: 11400000, guid: 32136164915358549888ee95cb7daa50, type: 2}
+    - target: {fileID: -5974728619388443056, guid: 4c75c3767eb11d740925e13c52e58121, type: 3}
+      propertyPath: physicsCheckRadius
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5974728619388443056, guid: 4c75c3767eb11d740925e13c52e58121, type: 3}
+      propertyPath: _physicsCheckRadius
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 527569030084189373, guid: 4c75c3767eb11d740925e13c52e58121, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -82,7 +114,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6619847548581415812, guid: 4c75c3767eb11d740925e13c52e58121, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7387379146190168448, guid: 4c75c3767eb11d740925e13c52e58121, type: 3}
       propertyPath: _poisonColor.a
@@ -107,40 +139,5 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2000761914901519965, guid: 4c75c3767eb11d740925e13c52e58121, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: -7133385562837504136}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c75c3767eb11d740925e13c52e58121, type: 3}
---- !u!1 &2807971898176431538 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2000761914901519965, guid: 4c75c3767eb11d740925e13c52e58121, type: 3}
-  m_PrefabInstance: {fileID: 4410090338601941999}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &-7133385562837504136
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2807971898176431538}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0

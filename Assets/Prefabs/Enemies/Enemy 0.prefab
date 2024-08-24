@@ -101,7 +101,6 @@ GameObject:
   - component: {fileID: -7203909691983117354}
   - component: {fileID: 2821449290275698448}
   - component: {fileID: -8223611212706335289}
-  - component: {fileID: -8367564667658382603}
   m_Layer: 6
   m_Name: Enemy 0
   m_TagString: Untagged
@@ -227,7 +226,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -245,7 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb04a62aa64ef134a8048aa735d7a3d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_healthBarSlider: {fileID: 0}
+  _healthBarSlider: {fileID: 0}
   _healthSettings: {fileID: 11400000, guid: 87b64b694d938ca41b8e6ee354dc47cb, type: 2}
   _spriteRenderer: {fileID: 0}
   _poisonColor: {r: 0, g: 0.5396226, b: 0.08002767, a: 1}
@@ -263,7 +262,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _movementSettings: {fileID: 11400000, guid: 0620370a7a9a3584bae47f02ecb8d628, type: 2}
   _renderer: {fileID: 527569030084189373}
-  _animator: {fileID: 0}
+  _animator: {fileID: 6507616327066096056}
+  _physicsCheckRadius: 0.4
+  _nudgeDistance: 0.025
+  _counterThing: 10
 --- !u!114 &-7203909691983117354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,8 +291,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e8c91edb6ed4f24281a10f01e6d57b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  corpsePrefab: {fileID: 4232485352523717824, guid: 227d3a9a1e420874f844630932ef18ce, type: 3}
-  spriteRenderer: {fileID: 527569030084189373}
+  _corpsePrefab: {fileID: 4232485352523717824, guid: 227d3a9a1e420874f844630932ef18ce, type: 3}
+  _spriteRenderer: {fileID: 527569030084189373}
 --- !u!114 &-8223611212706335289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,31 +305,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cf8555a38209b348a301a4d263f8f70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lootTable: {fileID: 11400000, guid: 11ca796529eece240b6ad9fc2db830d3, type: 2}
---- !u!50 &-8367564667658382603
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2000761914901519965}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  _lootTable: {fileID: 11400000, guid: 11ca796529eece240b6ad9fc2db830d3, type: 2}

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2644e89bdb7184097b00a74c9e8b2b, type: 3}
   m_Name: HealthPack
   m_EditorClassIdentifier: 
-  _type: 1
+  pickupType: 1
   value: 10
