@@ -9,6 +9,8 @@ using VContainer;
 public class Health : MonoBehaviour
 {
     [Inject] private readonly AudioManager _audioManager;
+    [Inject] private readonly Text _killCountIndicator;
+    public static int killCount;
 
     public delegate void DeathEvent();
     public event DeathEvent OnDeathEvent;
@@ -46,7 +48,7 @@ public class Health : MonoBehaviour
             if (_poisonDamageTimer > 1)
             {
                 _poisonDamageTimer = 0;
-                //DoDamage(_poisonDamage);
+                DoDamage(_poisonDamage);
             }
         }
     }
@@ -69,7 +71,14 @@ public class Health : MonoBehaviour
         OnDeathEvent.Invoke();
         _audioManager.PlayDeathSound();
 
+        UpdateKillCount();
         Destroy(gameObject);
+    }
+
+    private void UpdateKillCount()
+    {
+        killCount++;
+        _killCountIndicator.text = killCount.ToString();
     }
 
     private void SetHealthBarValue()

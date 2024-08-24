@@ -443,7 +443,7 @@ MonoBehaviour:
   _upgradeTable: {fileID: 11400000, guid: 2e675e00e60d95744b14df4f894bf650, type: 2}
   _upgradeText: {fileID: 0}
   _showUpgradeTextForSeconds: 2
-  _thenFadeTextInSeconds: 0
+  _thenFadeTextInSeconds: 0.5
 --- !u!114 &5990375884294444885
 MonoBehaviour:
   m_ObjectHideFlags: 0

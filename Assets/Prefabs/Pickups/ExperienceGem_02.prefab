@@ -13,6 +13,10 @@ PrefabInstance:
       value: ExperienceGem_02
       objectReference: {fileID: 0}
     - target: {fileID: 1465580559681844494, guid: 0ed7e0af07f89eb4ba253fa8919cc25c, type: 3}
+      propertyPath: pickupSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1465580559681844494, guid: 0ed7e0af07f89eb4ba253fa8919cc25c, type: 3}
       propertyPath: _pickupSettings
       value: 
       objectReference: {fileID: 11400000, guid: 4aa10014bce763149a26433f0d613953, type: 2}

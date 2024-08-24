@@ -115,7 +115,7 @@ public class PlayerFire : MonoBehaviour
 
         Bullet bullet = _bulletObjectPool.Pool.Get();
         bullet.transform.position = transform.position;
-        bullet.Fire(new BulletConfig(direction, _bulletTravelSpeed, _damage, _poisonDamage, 5)); //TODO Fire settings
+        bullet.Fire(new BulletConfig(direction, _bulletTravelSpeed, _damage, _poisonDamage, 5));
     }
 
     private void AimAtTarget()

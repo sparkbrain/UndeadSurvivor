@@ -13,6 +13,10 @@ PrefabInstance:
       value: AmmoBox
       objectReference: {fileID: 0}
     - target: {fileID: 1465580559681844494, guid: 0ed7e0af07f89eb4ba253fa8919cc25c, type: 3}
+      propertyPath: pickupSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1465580559681844494, guid: 0ed7e0af07f89eb4ba253fa8919cc25c, type: 3}
       propertyPath: _pickupSettings
       value: 
       objectReference: {fileID: 11400000, guid: 5e36b4ce513ebf24a931804bcc4709f9, type: 2}

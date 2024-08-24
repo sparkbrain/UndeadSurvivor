@@ -134,4 +134,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pickupSettings: {fileID: 11400000, guid: ad5b0b6cec67ba34dac8b0cae291a87b, type: 2}
-  pickupSpeed: 5
+  pickupSpeed: 10

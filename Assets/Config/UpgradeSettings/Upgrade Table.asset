@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   possibleDrops:
   - item: {fileID: 11400000, guid: 5f06bd98928920945a64a234204f11f6, type: 2}
-    chance: 25
+    chance: 30
   - item: {fileID: 11400000, guid: e71c28790eb29d74db021ef4c71386df, type: 2}
-    chance: 25
+    chance: 50
   - item: {fileID: 11400000, guid: 73375cb79d7934746bc458608bec8d7f, type: 2}
-    chance: 25
+    chance: 10
   - item: {fileID: 11400000, guid: 8f4ab144d62156a4e88564da6378cc53, type: 2}
-    chance: 25
+    chance: 10

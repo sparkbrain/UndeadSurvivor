@@ -21,15 +21,12 @@ public class UpgradeManager : MonoBehaviour
     [SerializeField] private float _showUpgradeTextForSeconds;
     [SerializeField] private float _thenFadeTextInSeconds;
 
-    private int _textFontSize;
     Movement _movement;
     PlayerFire _playerFire;
 
     private void Awake()
     {
         _upgradeText.enabled = false;
-        _textFontSize = _upgradeText.fontSize;
-
         _movement = GetComponent<Movement>();
         _playerFire = GetComponent<PlayerFire>();
     }
@@ -66,18 +63,19 @@ public class UpgradeManager : MonoBehaviour
     {
         _upgradeText.enabled = true;
         _upgradeText.text = text;
-        _upgradeText.fontSize = _textFontSize;
+        _upgradeText.transform.localScale = Vector3.one;
 
         yield return new WaitForSeconds(_showUpgradeTextForSeconds);
 
         float t = 0;
         while(t < 1)
         {
-            t += Time.deltaTime * _thenFadeTextInSeconds;
-            _upgradeText.fontSize = Mathf.RoundToInt(Mathf.Lerp(_textFontSize, 0, t));
+            t += Time.deltaTime / (_thenFadeTextInSeconds + Mathf.Epsilon);
+            _upgradeText.transform.localScale = Vector3.Lerp(Vector3.one, Vector3.zero, t);
+
+            yield return null;
         }
 
-        _upgradeText.fontSize = 0;
         _upgradeText.enabled = false;
     }
 }

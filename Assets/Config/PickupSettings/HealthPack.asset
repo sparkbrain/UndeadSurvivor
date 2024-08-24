@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: HealthPack
   m_EditorClassIdentifier: 
   _type: 1
-  value: 5
+  value: 10

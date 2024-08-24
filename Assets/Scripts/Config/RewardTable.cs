@@ -17,7 +17,6 @@ public class RewardTable<T> : ScriptableObject
         float roll = Random.Range(0f, 100f);
         droppedItem = default;
 
-        // TODO Better name
         // If item A has 10% chance to drop, and item B 20% chance to drop,
         // 00<roll<10  yields item A,
         // 10<roll<20  yields item B,

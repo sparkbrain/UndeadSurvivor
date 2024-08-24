@@ -30,15 +30,12 @@ public class UpPicker : MonoBehaviour
         switch (pickup._type)
         {
             case PickupType.HEALTH:
-                print($"Giving health : {pickup.value}");
                 _health.RestoreHealth(pickup.value);
                 break;
             case PickupType.AMMO:
-                print($"Giving ammo : {pickup.value}");
                 _attack.GiveAmmo(pickup.value);
                 break;
             case PickupType.EXPERIENCE:
-                print($"Giving experience : {pickup.value}");
                 _levelManager.GiveExperience(pickup.value);
                 break;
         }
